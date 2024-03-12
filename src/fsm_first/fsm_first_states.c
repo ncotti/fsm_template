@@ -55,10 +55,6 @@ fsm_first_state_t fsm_first(fsm_first_data_t* data) {
         transition(data);
     }
 
-    if (new_state != current_state) {
-        current_state = new_state;
-        current_state = fsm_first(data);
-    }
-
+    current_state = new_state;
     return current_state;
 }

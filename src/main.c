@@ -1,4 +1,5 @@
 #include "fsm_first/fsm_first.h"
+#include "fsm_second/fsm_second.h"
 #include <stdio.h>
 
 /// @brief Check if any external event was triggered, and store its output.
@@ -20,6 +21,7 @@ int main(void) {
     while(1) {
         external_event(&data);
         current_state_fsm_first = fsm_first(&data);
+        fsm_second((fsm_second_data_t*) &data);
     }
     return 0;
 }
