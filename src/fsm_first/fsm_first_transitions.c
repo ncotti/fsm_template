@@ -6,32 +6,26 @@
 ******************************************************************************/
 static void from_A_to_B(fsm_first_data_t* data) {
     printf("Transition from A to B.\n");
-    data->input_char = '\0';
 }
 
 static void from_A_to_C(fsm_first_data_t* data) {
     printf("Transition from A to C.\n");
-    data->input_char = '\0';
 }
 
 static void from_B_to_A(fsm_first_data_t* data) {
     printf("Transition from B to A.\n");
-    data->input_char = '\0';
 }
 
 static void from_B_to_C(fsm_first_data_t* data) {
     printf("Transition from B to C.\n");
-    data->input_char = '\0';
 }
 
 static void from_C_to_A(fsm_first_data_t* data) {
     printf("Transition from C to A.\n");
-    data->input_char = '\0';
 }
 
 static void from_C_to_B(fsm_first_data_t* data) {
     printf("Transition from C to B.\n");
-    data->input_char = '\0';
 }
 
 /******************************************************************************
