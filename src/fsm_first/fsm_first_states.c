@@ -47,7 +47,7 @@ static const fsm_first_fn_t fsm_first_fn_list[FSM_FIRST_STATE_QTY] = {
  * FSM (Finite state machine)
 ******************************************************************************/
 fsm_first_state_t fsm_first(fsm_first_data_t* data) {
-    static fsm_first_state_t current_state = ST_A;  // Initial state
+    static fsm_first_state_t current_state = FSM_FIRST_INITIAL_STATE;
     fsm_first_state_t new_state = fsm_first_fn_list[current_state](data);
     fsm_first_transition_t transition = fsm_first_transition_table[current_state][new_state];
 

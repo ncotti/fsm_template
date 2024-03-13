@@ -4,14 +4,15 @@
 /******************************************************************************
  * Types and definitions
 ******************************************************************************/
-#define FSM_FIRST_STATE_QTY 3  /// Total amount of states
-
 /// @brief All possible states
 typedef enum fsm_first_state_t {
     ST_A,
     ST_B,
     ST_C,
 } fsm_first_state_t;
+
+#define FSM_FIRST_STATE_QTY 3           /// Total amount of states
+#define FSM_FIRST_INITIAL_STATE ST_A    /// Initial state
 
 /// @brief Contains all the information extracted from external events, and
 ///     is used by the FSM to determine if a transition is due.
