@@ -5,8 +5,6 @@ To use, copy all files in the `src` and `inc` folders.
 
 An example implementation was made based on the following two models:
 
-<center>
-
 | ![FSM template letters](/images/fsm_template_letters.svg) |
 |:--:|
 | *FSM First* |
@@ -14,8 +12,6 @@ An example implementation was made based on the following two models:
 | ![FSM template numbers](/images/fsm_template_numbers.svg) |
 |:--:|
 | *FSM Second* |
-
-</center>
 
 ## Run the example
 
