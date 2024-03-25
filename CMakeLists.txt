@@ -5,9 +5,7 @@ add_compile_options(-g)
 
 add_executable(main
     ${PROJECT_SOURCE_DIR}/src/main.c
-    ${PROJECT_SOURCE_DIR}/src/fsm_first/fsm_first_states.c
-    ${PROJECT_SOURCE_DIR}/src/fsm_first/fsm_first_transitions.c
-    ${PROJECT_SOURCE_DIR}/src/fsm_second/fsm_second_states.c
-    ${PROJECT_SOURCE_DIR}/src/fsm_second/fsm_second_transitions.c)
+    ${PROJECT_SOURCE_DIR}/src/fsm_first/fsm_first.c
+    ${PROJECT_SOURCE_DIR}/src/fsm_second/fsm_second.c)
 
 install(TARGETS main DESTINATION ${PROJECT_SOURCE_DIR}/bin)

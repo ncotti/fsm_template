@@ -34,10 +34,8 @@ typedef void (*fsm_second_transition_t)(fsm_second_data_t*);
 /// @param data Pointer to the data from events that could trigger a
 ///     state transition, or could be modified during the transition.
 /// @return Current state, after executing the transition.
-fsm_second_state_t fsm_second(fsm_second_data_t* data);
+void fsm_second(fsm_second_data_t* data);
 
-/// @brief Transition table, contains all actions to be done when passing
-///     from one state to another.
-extern const fsm_second_transition_t fsm_second_transition_table[FSM_SECOND_STATE_QTY][FSM_SECOND_STATE_QTY];
+fsm_second_state_t fsm_second_get_state(void);
 
 #endif // FSM_SECOND_H_

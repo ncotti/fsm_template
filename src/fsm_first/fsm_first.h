@@ -34,10 +34,9 @@ typedef void (*fsm_first_transition_t)(fsm_first_data_t*);
 /// @param data Pointer to the data from events that could trigger a
 ///     state transition, or could be modified during the transition.
 /// @return Current state, after executing the transition.
-fsm_first_state_t fsm_first(fsm_first_data_t* data);
+void fsm_first(fsm_first_data_t* data);
 
-/// @brief Transition table, contains all actions to be done when passing
-///     from one state to another.
-extern const fsm_first_transition_t fsm_first_transition_table[FSM_FIRST_STATE_QTY][FSM_FIRST_STATE_QTY];
+/// @brief Return the current state of the FSM.
+fsm_first_state_t fsm_first_get_state(void);
 
 #endif // FSM_FIRST_H_

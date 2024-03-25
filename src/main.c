@@ -12,7 +12,6 @@ void external_event(fsm_first_data_t* data) {
 
 /// @brief Simple main function to exemplify functionality of the FSM.
 int main(void) {
-    fsm_first_state_t current_state_fsm_first;
     fsm_first_data_t data;
 
     printf("Three states are defined: A, B, C.\n");
@@ -20,7 +19,7 @@ int main(void) {
 
     while(1) {
         external_event(&data);
-        current_state_fsm_first = fsm_first(&data);
+        fsm_first(&data);
         fsm_second((fsm_second_data_t*) &data);
     }
     return 0;
